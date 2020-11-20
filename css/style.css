@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 50%;
+  }
+}
+
+.daily-menu {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 40px;
+  grid-column-gap: 80px;
+  justify-items: space-between;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .daily-menu {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.daily-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily-menu__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0px 31px 0px 0px;
+}
+
+.daily-menu__right-section {
+  width: 100%;
+}
+
+.daily-menu__name-and-price {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.daily-menu__name {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+.daily-menu__points {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0px 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.daily-menu__price {
+  font-weight: 700;
+}
+
+.daily-menu__price-element {
+  width: 28px;
+  margin: 6px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.daily-menu__price-element:after {
+  content: "$";
+}
+
+.daily-menu__alergents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 13px 0px 0px 0px;
+  text-transform: uppercase;
+  color: #bcbcbc;
+  font-size: 13px;
+}
